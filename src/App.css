@@ -6,22 +6,19 @@
 
 body{
   background-image: url(./image/pokemon-6260ac99de1dfb15bf5f0311_f155ed319dc2b70b94474822.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
-  letter-spacing: 8px;
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 2px;
   font-family: "Courgette", cursive;
-  color: #37589f;
+  color: #db710d;
 }
 
 .card {
-  width: 30%;
-  min-width: 400px;
+  width:30%;
   background-color: #37a2ba90;
-  box-shadow: 0px 0px 1000px 12px #5b545484;
-  border: none;
-
-
-}
+  box-shadow: 0px 0px 20px 12px #5b545484;
+  }
 
 .btn {
   background-color: #37589f;

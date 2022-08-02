@@ -29,7 +29,7 @@ function App() {
         {/* <h1>Loading ...</h1> */}
         </>
       ):(
-      <section className='card m-4 p-5 h-75 text-dark'>
+      <section className='card'>
          <img  src={pokemon.sprites.front_default} alt={pokemon.name} />
          <h2 className='className="fs-2'> Name : {pokemon.name}</h2>
          <p className='fs-2' >height: {pokemon.height}</p>
