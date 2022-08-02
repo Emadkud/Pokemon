@@ -4,19 +4,19 @@ import './App.css'
 function App() {
   
   const [pokemon,setPokemon] = useState(null)
-  const [myClass,setMyClasse] = useState("newpk")
+  const [myClass,setMyClasse] = useState("pkmn")
 
   useEffect(()=>{
     fetchPokemons(1)
   },[]
   )
 
-  const dispation = () =>{
-    setMyClasse("oldpkmn")
+  const view = () =>{
+    setMyClasse("pkm")
   } 
 
   useEffect(()=>{
-    setMyClasse("newpk")
+    setMyClasse("pkmn")
   },[pokemon])
 
   useEffect(()=>{
@@ -24,7 +24,7 @@ function App() {
       const randomID = Math.floor(Math.random()*151)+1
       fetchPokemons(randomID)
     }
-   if(myClass==='pkm')
+   if(myClass==='pkmn')
    {
    setTimeout(()=>{changePokemon()},900)
   }
@@ -58,7 +58,7 @@ function App() {
          </p>
       </section>
       }
-      <button onClick={di}>Pokémon</button>
+      <button onClick={view}>Pokémon</button>
     </div>
   );
 }
