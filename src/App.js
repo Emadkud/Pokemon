@@ -22,19 +22,19 @@ function App() {
 
 
   return (
-    <div className="container d-flex justify-content-center">
-      
+    <div className="container d-flex flex-column justify-content-center align-items-center">
+      <h1 className='fs-2' >Pokémon</h1>
       {!pokemon ?(
         <>
-        <h1>Loading ...</h1>
+        {/* <h1>Loading ...</h1> */}
         </>
       ):(
-      <section className=''>
-         <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-         <h2 className=''>{pokemon.name}</h2>
-         <p >height: <span className=''>{pokemon.height}</span></p>
-         <p >Weight: <span className=''>{pokemon.weight}</span></p>
-         <p>
+      <section className='card m-4 p-5 h-75 text-dark'>
+         <img  src={pokemon.sprites.front_default} alt={pokemon.name} />
+         <h2 className='className="fs-2'> Name : {pokemon.name}</h2>
+         <p className='fs-2' >height: {pokemon.height}</p>
+         <p className='fs-2'>Weight: {pokemon.weight}</p>
+         <p className='fs-2' >
           Types:
          <ul >
           {pokemon.types.map((type)=>{
@@ -42,7 +42,7 @@ function App() {
           })}
          </ul>
          </p>
-         <button onClick={handleButtonClick}> Pokémon</button>
+         <button className=" btn fs-2 " onClick={handleButtonClick}> Pokémon</button>
       </section>
       )}
       </div>
