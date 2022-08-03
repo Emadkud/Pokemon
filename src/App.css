@@ -11,7 +11,8 @@ body{
   background-position: center;
   letter-spacing: 2px;
   font-family: "Courgette", cursive;
-  color: #db710d;
+  color: #fcfefd;
+  text-align: center;
 }
 
 .card {
